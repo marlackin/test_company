@@ -1,0 +1,27 @@
+.login-page{
+    display: flex;
+    width: 100%;
+
+}
+
+.image-section{
+    width: 30%;
+}
+
+.image-section img{
+    width: 100%;
+}
+
+
+form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+    .image-section.display-none{
+        display: none!important;
+    }
+  }
