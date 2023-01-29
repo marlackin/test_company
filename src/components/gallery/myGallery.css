@@ -1,20 +1,32 @@
 article {
-    padding: 2rem 4rem;
-  }
+  padding: 2rem 4rem;
+}
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+.wrapper {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 20px 23px;
+}
+main {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper img {
+  border-radius: 15px;
+  width: 290px;
+  height: 234px;
+}
 
 @media screen and (max-width: 900px) {
-    article {
-      padding: 1rem 3rem;
-    }
+  article {
+    padding: 1rem 3rem;
   }
-  
-  @media screen and (max-width: 400px) {
-    article {
-      padding: 1rem 3rem;
-    }
+}
+
+@media screen and (max-width: 400px) {
+  article {
+    padding: 1rem 3rem;
   }
+}

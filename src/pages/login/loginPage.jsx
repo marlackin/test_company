@@ -4,6 +4,8 @@ import MyButton from "../../components/UI/button/myButton";
 import MyInput from "../../components/UI/input/myInput";
 import { AuthContext } from "../../context/index";
 import "./loginPage.css";
+import loginPng from "./image.png";
+import backPng from "./back.png";
 
 const userPassword = process.env.REACT_APP_PASSWORD;
 const userLogin = process.env.REACT_APP_LOGIN;
@@ -31,24 +33,27 @@ const Login = () => {
   return (
     <div className="login-page">
       <div className="image-section display-none">
-        <img src="" alt="" />
+        <img src={loginPng} alt="img" />
       </div>
-      <div>
-        <h1>LOG IN</h1>
-        <form onSubmit={onLogin}>
-          <MyInput type="text" placeholder="Введите логин" name="login" />
-          <MyInput
-            type="password"
-            placeholder="Введите пароль"
-            name="password"
-          />
-          {showWarning && (
-            <div>
-              <p>Wrong name or password. Please, try again</p>
-            </div>
-          )}
-          <MyButton>Continue</MyButton>
-        </form>
+      <div className="login_section_container">
+        <img src={backPng} alt="dasda" />
+        <div className="login_section">
+          <h1>LOG IN</h1>
+          <form onSubmit={onLogin}>
+            <MyInput type="text" placeholder="Введите логин" name="login" style={{marginBottom: 14}} />
+            <MyInput
+              type="password"
+              placeholder="Введите пароль"
+              name="password"
+            />
+            {showWarning  && (
+              <div className="wrong">
+                <p>Wrong name or password. Please, try again</p>
+              </div>
+            )}
+            <MyButton style={{marginTop: 30}}>Continue</MyButton>
+          </form>
+        </div>
       </div>
     </div>
   );

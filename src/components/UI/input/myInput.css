@@ -1,13 +1,21 @@
 form .myInput {
-  font-family: "Mulish";
+  font-family: 'Mulish', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
   letter-spacing: 0.03em;
-  color: #7f7f7f;
-  box-sizing: border-box;
-  background-color: #242424;
-  border: 0.75px solid #3d3d3d;
-  border-radius: 75px;
+  color: #f9f4f1;
+  background: #242424;
+  border-radius: 100px;
+  border: 0.75px solid #3D3D3D;
+  height: 44px;
+  width: 100%;
+  padding: 0 20px ;
+}
+
+form .myInput ::placeholder{
+  color: #7F7F7F;
 }
